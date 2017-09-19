@@ -1,1 +1,21 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[36.2021,37.1343]},"properties":{"description":"Conflict Zone, IDP","title":"Aleppo, Syria","marker-size":"small"}}
+{
+ 
+"type": "Feature",
+ 
+"properties": {
+ 
+"title":"Aleppo,Syria",
+ 
+"description": "Flush toilet, shower"
+ 
+}
+ 
+"geometry": {
+ 
+"type": "Point",
+ 
+"coordinates":[-122.048974,45.59844]
+ 
+}
+ 
+}
