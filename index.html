@@ -49,7 +49,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[50.96678372393623,-2.059765104606969],[52.26941133898013,1.2232989755793158]]);
+        }).fitBounds([[51.05769715573127,-1.9354941931210445],[52.357750503398144,1.34756988706524]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -106,6 +106,8 @@
             attribution: '',
             minZoom: 1,
             maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 22
         });
         layer_GoogleMaps_0;
         map.addLayer(layer_GoogleMaps_0);
@@ -276,81 +278,6 @@
                 interactive: true,
             }
                     break;
-                case 'Grade 5':
-                    return {
-                pane: 'pane_AgriculturalLandClassification_3',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.5)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(254,201,128,0.5)',
-                interactive: true,
-            }
-                    break;
-                case 'Non Agricultural':
-                    return {
-                pane: 'pane_AgriculturalLandClassification_3',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.5)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(240,124,74,0.5)',
-                interactive: true,
-            }
-                    break;
-                case 'Urban':
-                    return {
-                pane: 'pane_AgriculturalLandClassification_3',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.5)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(215,25,28,0.5)',
-                interactive: true,
-            }
-                    break;
-                case 'Exclusion':
-                    return {
-                pane: 'pane_AgriculturalLandClassification_3',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.5)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(190,178,151,0.5)',
-                interactive: true,
-            }
-                    break;
-                case 'NULL':
-                    return {
-                pane: 'pane_AgriculturalLandClassification_3',
-                opacity: 1,
-                color: 'rgba(35,35,35,0.5)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(190,178,151,0.5)',
-                interactive: true,
-            }
-                    break;
             }
         }
         map.createPane('pane_AgriculturalLandClassification_3');
@@ -487,7 +414,7 @@
         rotationOrigin: 'center center',
         icon: L.icon({
             iconUrl: 'markers/SitesofInterest_6.svg',
-            iconSize: [22.800000000000004, 22.800000000000004]
+            iconSize: [22.799999999999997, 22.799999999999997]
         }),
                 interactive: true,
             }
@@ -527,7 +454,7 @@
             {label: '<img src="legend/SitesofInterest_6.png" /> Sites of Interest', layer: layer_SitesofInterest_6},
             {label: '<img src="legend/TheGranville_5.png" /> The Granville', layer: layer_TheGranville_5},
             {label: '<img src="legend/Combined15hrsTravelTime_4.png" /> Combined 1.5hrs Travel Time', layer: layer_Combined15hrsTravelTime_4},
-            {label: 'Agricultural Land Classification<br /><table><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_Grade10.png" /></td><td>Grade 1</td></tr><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_Grade21.png" /></td><td>Grade 2</td></tr><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_Grade32.png" /></td><td>Grade 3</td></tr><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_Grade43.png" /></td><td>Grade 4</td></tr><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_Grade54.png" /></td><td>Grade 5</td></tr><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_NonAgricultural5.png" /></td><td>Non Agricultural</td></tr><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_Urban6.png" /></td><td>Urban</td></tr><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_Exclusion7.png" /></td><td>Exclusion</td></tr><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_8.png" /></td><td></td></tr></table>', layer: layer_AgriculturalLandClassification_3},
+            {label: 'Agricultural Land Classification<br /><table><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_Grade10.png" /></td><td>Grade 1</td></tr><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_Grade21.png" /></td><td>Grade 2</td></tr><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_Grade32.png" /></td><td>Grade 3</td></tr><tr><td style="text-align: center;"><img src="legend/AgriculturalLandClassification_3_Grade43.png" /></td><td>Grade 4</td></tr></table>', layer: layer_AgriculturalLandClassification_3},
             {label: '<img src="legend/SearchArea60kmcone_2.png" /> Search Area (60km cone)', layer: layer_SearchArea60kmcone_2},
             {label: '<img src="legend/LocalAuthorities_1.png" /> Local Authorities', layer: layer_LocalAuthorities_1},
             {label: "Google Maps", layer: layer_GoogleMaps_0},]
